@@ -74,10 +74,11 @@ export default class cadastroPartidosDB {
       return listaPartidos;
     }
   }
+  
   async consultarPorCodigo(codigo) {
     const conexao = await conectar();
     const sql = `SELECT * FROM partidos WHERE codigo = ?`;
-    const [registros] = await conexao.execute(sql, [codigo]);
+    const [registros,campos] = await conexao.execute(sql, [codigo]);
     await conexao.release();
     let listaPartidos = [];
     for (const registro of registros) {

@@ -1,6 +1,6 @@
 const formCadCandidatos = document.getElementById("formCadastroCandidatos");
 
-let acao = "cadastrar";
+constacao = "cadastrar";
 
 function manipularEnvio(evento) {
   evento.preventDefault();
@@ -223,8 +223,6 @@ function capturarCCandidatos(cpf, titulo, nome, endereco, numero, bairro, cidade
     document.getElementById("uf").value = uf;
     document.getElementById("cep").value = cep;
     document.getElementById("rendaMensal").value = rendaMensal;
-
-    acao = acaoEscolhida;
 
     if (acaoEscolhida == "atualizar") {
         document.getElementById("atualizar").disabled = false;

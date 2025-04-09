@@ -65,6 +65,6 @@ export default class Partidos {
 
     async consultarPorCodigo(codigo) {
       const partidosDB = new cadastroPartidosDB();
-      return await partidosDB.consultarPorDestino(codigo);
+      return await partidosDB.consultarPorCodigo(codigo);
     }
 }

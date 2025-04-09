@@ -133,8 +133,8 @@ export default class Candidatos {
       return await candidatosDB.consultar(this);
     }
 
-    async consultarPorDestino(cpf) {
+    async consultarPorCpf(cpf) {
       const candidatosDB = new cadastroCandidatosDB();
-      return await candidatosDB.consultarPorDestino(cpf);
+      return await candidatosDB.consultarPorCpf(cpf);
     }
 }
