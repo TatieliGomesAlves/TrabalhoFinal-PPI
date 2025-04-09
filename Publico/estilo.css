@@ -1,0 +1,168 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.titulo{
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 70px;
+  
+}
+
+.campos-formulario{
+ margin-left: 30px;
+ margin-right: 30px;
+ margin-bottom: 30px;
+}
+
+.img-eleicoes{
+margin-left: 150px;
+margin-right: 150px;
+margin-bottom: 50px;
+margin-top: 50px;
+width: 80%;
+border-radius: 10px;
+}
+
+.cor-fundo {
+  background-color: #f6f6f6;
+}
+
+
+.botoes-formulario {
+  margin-left: 30px;
+}
+
+.tabela {
+  padding-right: 30px;
+  margin-top: 50px;
+}
+
+.botoes-formulario-partido {
+  margin-left: 0;
+  margin-bottom: 30px;
+}
+
+.tabela-partidos{
+  margin: 30px;
+}
+
+main {
+  min-height: calc(100vh - 97px);
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+}
+
+h2 {
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.botao-logout {
+  margin-left: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 10px 20px;
+}
+
+.alinhar-input {
+  padding: 400px;
+  padding-top: 0;
+}
+.botao-entrar {
+  margin-top: 40px;
+}
+
+.check-box {
+  margin-top: 10px;
+}
+
+.campo-senha {
+  margin-top: 20px;
+}
+
+.alinhar-detalhes {
+  padding: 50px;
+  font-size: 19px;
+  text-align: justify;
+}
+
+.botoes-login {
+  padding-top: 20px;
+}
+
+.card-wraper {
+  display: flex;
+  column-gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 16px;
+
+}
+
+.card {
+  max-width: 30rem;
+  margin-left: 80px;
+}
+
+.card-espaco {
+  margin-top: 50px;
+  margin: 50px;
+}
+
+
+/* mobile */
+@media screen and (max-width: 420px) {
+  .card-wraper {
+    flex-direction: column;
+  }
+  .alinhar-detalhes {
+    padding: 25px;
+  }
+}
+
+@media screen and (min-width: 421px) and (max-width: 1024px) {
+  .alinhar-detalhes {
+    padding: 50px;
+  }
+  .card-wraper .card {
+    max-width: 40%;
+  }
+}
