@@ -1,6 +1,6 @@
 const formCadCandidatos = document.getElementById("formCadastroCandidatos");
 
-constacao = "cadastrar";
+const acao = "cadastrar";
 
 function manipularEnvio(evento) {
   evento.preventDefault();
